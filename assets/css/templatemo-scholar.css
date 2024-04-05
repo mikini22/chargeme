@@ -1,10 +1,6 @@
 /* 
 
-TemplateMo 586 Scholar
 
-https://templatemo.com/tm-586-scholar
-
-*/
 
 /* ---------------------------------------------
 Table of contents
@@ -115,7 +111,7 @@ Global Styles
 --------------------------------------------- 
 */
 html,
-body {
+body,  {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -1777,7 +1773,7 @@ Footer Style
 --------------------------------------------- 
 */
 
-footer {
+/* footer {
   margin-top: 150px;
   position: relative;
   background-color: #7a6ad8;
@@ -1788,7 +1784,7 @@ footer {
 
 footer p {
   text-align: center;
-  line-height: 150px;
+  line-height: 200px;
   color: #fff;
   font-weight: 400;
 }
@@ -1815,7 +1811,7 @@ footer::before {
   height: 119px;
   content: '';
   z-index: 2;
-}
+} */
 
 /* 
 ---------------------------------------------

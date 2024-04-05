@@ -158,7 +158,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <nav class="main-nav">
+                <nav class="main-nav ">
                     <!-- ***** Logo Start ***** -->
                     <a href="index.html" class="logo">
                         <h1 class="mx-3">Charge Me</h1>
@@ -168,15 +168,15 @@
                     
                     <!-- ***** Serach Start ***** -->
                     <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
+                    <ul class="nav sub-menu" >
                       <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                       <li class="scroll-to-section"><a href="">About US</a></li>
                       <li class="scroll-to-section"><a href="">How it works</a></li>
                       <li class="scroll-to-section"><a href=""><i class="fa-solid fa-globe"></i> EN</a></li>
                       <li class="scroll-to-section mb-0"><a href=""><button style="background-color: green; border: none; border-radius: 14px; height: fit-content;">Access App</button></a></li>
                   </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
+                    <a class='menu-trigger nav-btn' >
+                        <span class=" ">Menu</span>
                     </a>
                     <!-- ***** Menu End ***** -->
                 </nav>
@@ -185,7 +185,13 @@
     </div>
   </header>
   <!-- ***** Header Area End ***** -->
+<script>
+   $(this).on('click', function (event) {
+        $('.nav-btn').removeClass('active');
+        $('.nav-btn').parent().find('.sub-menu').slideToggle();
+    });
 
+</script>
   <div class="main-banner" id="top">
     <div class="container">
       <div class="row">
@@ -560,14 +566,237 @@
     </div>
   </div>
 
-  <footer>
+  <!-- <footer>
     <div class="container">
-      <div class="col-lg-12">
+      <div class="col-lg-12 col-md-6 col-sm-12">
         <p>Copyright © 2024 Charge Me Organization. All rights reserved. &nbsp;&nbsp;&nbsp; Design: <a href="#" rel="nofollow" target="_blank">Mikini</a></p>
       </div>
     </div>
-  </footer>
+  </footer> -->
+  <footer class="footer-section mt-5">
+    <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <div class="cta-text">
+                            <h4>CHARGE ME NOW</h4>
+                            <span>Mobile EV charge that has your back</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <div class="cta-text">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <div class="cta-text">
+                            <h4>Get the app</h4>
+                            <img src="assets/images/download (1).png" class="mt-3" style="width: 50%;" alt="">
+                            <img src="assets/images/download.png" class="mt-1" style="width: 50%;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+          <div class="footer-menu">
+              <ul>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">How it works</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">FAQs</a></li>
 
+              </ul>
+          </div>
+      </div>
+     
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>© 2024 Charge Me Now. All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                  <div class="footer-social-icon">
+                    <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<style>
+  ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background: #1C211F;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #ffffff;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #8C9E96;
+}
+.twitter-bg{
+  background: #8C9E96;
+}
+.google-bg{
+  background: #8C9E96;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #ff5e14;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #ff5e14;
+    padding: 13px 20px;
+    border: 1px solid #ff5e14;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #000000;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+</style>
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
